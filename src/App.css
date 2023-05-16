@@ -1,38 +1,63 @@
-.App {
+body {
+  font-family: sans-serif;
+}
+main {
+  padding-top: 50px;
+  margin: 0 80px;
+}
+.title {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body {
+  display: flex;
+  justify-content: flex-start;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.control-panel {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 20px;
 
-.App-link {
-  color: #61dafb;
+  width: 250px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todos-panel {
+  margin-right: 20px;
+  padding-left: 20px;
+  border-left: 3px solid;
+}
+.controls {
+  list-style-type: none;
+  padding: 0;
+}
+.controls li {
+  padding-bottom: 12px;
+  padding-top: 12px;
+  border-bottom: 4px solid;
+}
+.controls li:last-child {
+  border-bottom: none;
+}
+.control-btn {
+  margin-top: 8px;
+  height: 40px;
+  width: 120px;
+  background-color: rgba(220, 70, 70, 0.9);
+  color: rgb(20, 70, 70);
+  font-size: 16px;
+}
+.lbl {
+  font-size: 14px;
+  font-weight: 500;
+}
+.tf {
+  height: 30px;
+  width: 240px;
+  margin-bottom: 3px;
+  font-size: 16px;
+}
+.list-btn {
+  background-color: rgba(220, 70, 70, 0.9);
+  color: rgb(20, 70, 70);
+  margin: 0 2px;
 }
